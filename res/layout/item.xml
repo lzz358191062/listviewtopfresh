@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/test_icon" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="应用程序的名字"
+                android:textColor="@color/black"
+                android:textSize="18dip" />
+
+            <TextView
+                android:id="@+id/item_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dip"
+                android:text="应用程序信息"
+                android:textSize="14dip" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="60dip"
+            android:layout_height="30dip"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/dlbtn_selector"
+            android:layout_gravity="center_vertical"
+            android:text="下载" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/item_des"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:gravity="center_vertical"
+        android:text="软件说明" />
+
+</LinearLayout>
